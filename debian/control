@@ -1,0 +1,23 @@
+Source: spark-spl
+Priority: extra
+Maintainer: Yuan Xu <yuan.xu@dai-labor.de>
+Build-Depends: debhelper (>= 8.0.0), cmake, ruby, ruby-dev, libdevil-dev, libfreetype6-dev, libboost-dev, libboost-thread-dev, libboost-system-dev, libboost-regex-dev, libboost-date-time-dev, libode-dev, libsdl1.2-dev, zlib1g-dev
+Standards-Version: 3.9.4
+Section: libs
+Homepage: https://github.com/xuyuan/SimSpark-SPL
+Vcs-Git: git@github.com:xuyuan/SimSpark-SPL.git
+Vcs-Browser: https://github.com/xuyuan/SimSpark-SPL
+
+Package: spark-spl-dev
+Section: libdevel
+Architecture: any
+Depends: spark-spl (= ${binary:Version}), ruby-dev, libdevil-dev, libfreetype6-dev, libboost-dev, libboost-thread-dev, libboost-system-dev, libboost-regex-dev, libboost-date-time-dev, libode-dev, libsdl1.2-dev, zlib1g-dev
+Description: SimSpark simulator for Standard Platform League
+ SimSpark simulator for Standard Platform League
+
+Package: spark-spl
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby, libdevil1c2, libfreetype6, libboost-thread1.49.0, libboost-system1.49.0, libboost-regex1.49.0, libboost-date-time1.49.0, libode1, libsdl1.2debian, zlib1g
+Description: SimSpark simulator for Standard Platform League
+ SimSpark simulator for Standard Platform League

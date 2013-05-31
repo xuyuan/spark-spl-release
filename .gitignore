@@ -1,0 +1,11 @@
+debian/
+debian/spark-spl-dev.debhelper.log
+debian/spark-spl-dev.substvars
+debian/spark-spl-dev/
+debian/spark-spl.debhelper.log
+debian/spark-spl.postinst.debhelper
+debian/spark-spl.postrm.debhelper
+debian/spark-spl.substvars
+debian/spark-spl/
+debian/tmp/
+obj-x86_64-linux-gnu/

@@ -1,5 +1,5 @@
-spark-spl (2013.05.31~raring-1) raring; urgency=low
+spark-spl (2013.06.03~raring-1) raring; urgency=low
 
-  * Initial release
+  * GPS
 
- -- Yuan Xu <yuan.xu@dai-labor.de>  Thu, 30 May 2013 19:32:48 +0200
+ -- Yuan Xu <yuan.xu@dai-labor.de>  Thu, 3 June 2013 13:48:00 +0200

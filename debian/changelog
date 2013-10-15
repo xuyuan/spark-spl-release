@@ -1,5 +1,14 @@
-spark-spl (2013.06.03~raring-1) raring; urgency=low
+spark-spl (2013.10.15~raring-5ubuntu1) UNRELEASED; urgency=low
 
-  * GPS
+  [ Xu Yuan ]
+  * Imported Upstream version 2013.10.15-5
 
- -- Yuan Xu <yuan.xu@dai-labor.de>  Thu, 3 June 2013 13:48:00 +0200
+  [ Yuan Xu ]
+
+ -- Xu Yuan <yuan.xu@dai-labor.de>  Tue, 15 Oct 2013 19:23:15 +0200
+
+spark-spl (2013.10.15~raring-5) raring; urgency=low
+
+  * kill dead agents
+
+ -- Yuan Xu <yuan.xu@dai-labor.de>  Tue, 15 October 2013 19:14:00 +0200

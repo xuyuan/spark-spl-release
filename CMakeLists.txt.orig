@@ -207,6 +207,24 @@ if (WIN32) # try to find and install third-party .dlls to lib/thirdparty directo
 	   
         # MinGW dll installation on a single root system
         if (${CMAKE_CXX_COMPILER} MATCHES "mingw")
+<<<<<<< HEAD
+            set(MINGW_BIN_DIR "${Boost_LIBRARY_DIRS}/../bin/")
+            install(DIRECTORY ${MINGW_BIN_DIR} DESTINATION ${THLIBDIR}
+                FILES_MATCHING
+                PATTERN "libstdc++*.dll"
+                PATTERN "libgcc_s_sjlj*.dll"
+                PATTERN "libode*.dll"
+                PATTERN "tbb*.dll"
+                PATTERN "*boost*regex*mt*.dll"
+                PATTERN "*boost*date_time*mt*.dll"
+                PATTERN "*boost*thread*mt*.dll"
+				PATTERN "*boost*system*mt*.dll"
+                PATTERN "libIL*.dll"
+                PATTERN "libjpeg*.dll"
+                PATTERN "libpng*.dll"
+                PATTERN "*freetype*.dll"
+                PATTERN "*SDL*.dll")
+=======
             foreach(ROOT_DIR ${CMAKE_FIND_ROOT_PATH})
             file(GLOB inst_lib_files "${ROOT_DIR}/*/libstdc++*.dll"
                 "${ROOT_DIR}/*/libstdc++*.dll"
@@ -227,12 +245,21 @@ if (WIN32) # try to find and install third-party .dlls to lib/thirdparty directo
                 "${ROOT_DIR}/*/*SDL*.dll")
             install(PROGRAMS ${inst_lib_files} DESTINATION ${THLIBDIR})
             endforeach(ROOT_DIR)
+>>>>>>> origin/master
         endif (${CMAKE_CXX_COMPILER} MATCHES "mingw")
         
         string(REGEX REPLACE "(.*)\\.lib" "\\1.dll" ODEDLL "${ODE_LIBRARY}")
         if (EXISTS ${ODEDLL} AND ${ODEDLL} MATCHES ".dll$")
             install(PROGRAMS ${ODEDLL} DESTINATION ${THLIBDIR})
         endif (EXISTS ${ODEDLL} AND ${ODEDLL} MATCHES ".dll$")
+<<<<<<< HEAD
+        
+        install(DIRECTORY "${Boost_LIBRARY_DIRS}/" DESTINATION ${THLIBDIR}
+            FILES_MATCHING PATTERN "*boost*regex*mt*.dll"
+                PATTERN "*boost*date_time*mt*.dll"
+                PATTERN "*boost*thread*mt*.dll"
+				PATTERN "*boost*system*mt*.dll")
+=======
 
         file(GLOB INST_BOOST "${Boost_LIBRARY_DIRS}/*boost*system*mt*.dll" 
              "${Boost_LIBRARY_DIRS}/*boost*chrono*mt*.dll"
@@ -240,6 +267,7 @@ if (WIN32) # try to find and install third-party .dlls to lib/thirdparty directo
              "${Boost_LIBRARY_DIRS}/*boost*date_time*mt*.dll"
              "${Boost_LIBRARY_DIRS}/*boost*thread*mt*.dll")
         install(PROGRAMS ${INST_BOOST} DESTINATION ${THLIBDIR})
+>>>>>>> origin/master
         
         string(REGEX REPLACE "(.*)\\.lib" "\\1.dll" DevIL_DLL "${IL_LIBRARIES}")
         if (EXISTS ${DevIL_DLL} AND ${DevIL_DLL} MATCHES ".dll$")

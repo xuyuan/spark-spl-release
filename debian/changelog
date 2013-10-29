@@ -1,4 +1,4 @@
-spark-spl (2013.10.15~raring-5ubuntu1) UNRELEASED; urgency=low
+spark-spl (2013.10.15~raring-5) raring; urgency=low
 
   [ Xu Yuan ]
   * Imported Upstream version 2013.10.15-5
@@ -7,8 +7,3 @@ spark-spl (2013.10.15~raring-5ubuntu1) UNRELEASED; urgency=low
 
  -- Xu Yuan <yuan.xu@dai-labor.de>  Tue, 15 Oct 2013 19:23:15 +0200
 
-spark-spl (2013.10.15~raring-5) raring; urgency=low
-
-  * kill dead agents
-
- -- Yuan Xu <yuan.xu@dai-labor.de>  Tue, 15 October 2013 19:14:00 +0200

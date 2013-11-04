@@ -1,0 +1,11 @@
+--- plugin/sparkagent/angularmotoreffector.cpp	2013-10-29 14:09:40.000000000 +0100
++++ plugin/sparkagent/angularmotoreffector.cpp	2013-11-01 14:34:36.600349572 +0100
+@@ -56,7 +56,7 @@
+       return false;
+     }
+ 
+-    shared_ptr<HingeAction> motorAction = shared_dynamic_cast<HingeAction>(action);
++    shared_ptr<HingeAction> motorAction = boost::dynamic_pointer_cast<HingeAction>(action);
+ 
+     if (motorAction.get() == 0)
+     {

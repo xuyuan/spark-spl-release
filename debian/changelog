@@ -1,3 +1,12 @@
+spark-spl (2014.06.10~precise-1) precise; urgency=medium
+
+  [ Xu Yuan ]
+  * Imported Upstream version 2014.06.10
+
+  [ Yuan Xu ]
+
+ -- Xu Yuan <yuan.xu@dai-labor.de>  Tue, 10 Jun 2014 10:52:21 +0200
+
 spark-spl (2013.11.04~trusty-2ubuntu1) trusty; urgency=low
 
   [ Xu Yuan ]

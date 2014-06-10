@@ -55,13 +55,11 @@
 #undef accept
 #undef connect
 #undef close
-#undef fclose
 #undef recv
 #undef socket
 #undef send
 #undef read
 #undef write
-#undef Sleep
 
 #ifndef __MINGW32__
 // reenable compiler warning

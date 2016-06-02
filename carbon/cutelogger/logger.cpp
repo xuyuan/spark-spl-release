@@ -400,7 +400,7 @@ private:
     LogDevice* mLogDevice;         /*!< Log device. */
     QReadWriteLock mLogDeviceLock; /*!< Locker for log device. */
 
-    std::vector<std::pair<unsigned int, const std::string> > mLogSources; /*!< Only-expanding list (with fixed indices) of log sources. */
+    std::vector<std::pair<unsigned int, std::string> > mLogSources; /*!< Only-expanding list (with fixed indices) of log sources. */
     std::string mEmptyLogSourceName;                                      /*!< Default name for illegal log source. */
 };
 

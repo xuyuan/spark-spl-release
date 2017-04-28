@@ -1,7 +1,21 @@
-spark-spl (2016.06.02-1) UNRELEASED; urgency=medium
+spark-spl (2017.04.28.2~yakkety-1) yakkety; urgency=medium
 
   [ Xu Yuan ]
   * Imported Upstream version 2016.06.02
+
+  [ xu ]
+
+  [ Xu Yuan ]
+  * Imported Upstream version 2016.06.03
+  * Imported Upstream version 2016.06.04
+  * Imported Upstream version 2016.06.07
+  * Imported Upstream version 2016.06.08
+  * Imported Upstream version 2016.06.09
+  * Imported Upstream version 2016.06.10
+  * Imported Upstream version 2016.06.11
+  * Imported Upstream version 2016.06.15.1
+  * Imported Upstream version 2017.04.28.1
+  * Imported Upstream version 2017.04.28.2
 
   [ xu ]
 

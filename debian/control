@@ -18,6 +18,6 @@ Description: SimSpark simulator for Standard Platform League
 Package: spark-spl
 Section: libs
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, ruby, libdevil1c2, libfreetype6, libode4, libsdl1.2debian, zlib1g, libqt4-opengl
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby, libdevil1c2, libfreetype6, libode6, libsdl1.2debian, zlib1g, libqt4-opengl
 Description: SimSpark simulator for Standard Platform League
  SimSpark simulator for Standard Platform League
